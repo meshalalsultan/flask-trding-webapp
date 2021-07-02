@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <body>
+        <center>
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-prepend">
+        <center>
+            <h1>Sentiment Analysis</h1>
+            <form method="post" name="Userinput" id="Userinput" action="/sentiment">
+                <p>UserID</p>
+                <input type="text" class="form-control" name="userid" placeholder="Enter UserID without @">
+                <p>HashTag</p>
+                <input type="text" class="form-control" name="hashtag" placeholder="Enter HashTag with #">
+                <center><button type="submit" class="btn btn-light btn-outline-success" id="sendMessageButton">Get Analysis</button></center>
+                <br>
+                <center><a href="/"><h6 style="color: red" >{{ error }}</h6></a></center>
+                <a href="#" class="fa fa-linkedin-square" style="font-size:36px" target="_black"></a>
+                <a href="https://bit.ly/2yoggit" class="fa fa-github" style="font-size:36px" target="_black"> </a>
+                <a href="https://bit.ly/3dbLJLC" class="fa fa-twitter-square" style="font-size:36px" target="_black"> </a>
+                <a href="https://bit.ly/32SXHV0" class="fa fa-instagram" style="font-size:36px" target="_black"></a>
+
+            </form> 
+        </center>
+        </div>
+    </div>
+        </div>
+        </center>
+{% endblock %}
+    </body>
+}
+</html>
